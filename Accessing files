@@ -1,0 +1,42 @@
+Basic file permission 
+ permission groups:
+
+Owner − The owner's permissions determine what actions the owner of the file can perform on the file.
+Group − The group's permissions determine what actions a user, who is a member of the group that a file belongs to, can perform on the file.
+Other − The permissions for others indicate what action all other users can perform on the file.
+
+Permission Types:
+1. Read : Allows the contents of the file to be viewed.Read permission allows you to list the contents of the directory
+2. write : Allows to modify the contents of that file.
+3. Execute : Allows you to runt the file and execute a program or script.
+
+To view the permissons on file or directory the command is :
+         ls -l <directory/file>
+  The permission in the command line is displayed as: _rwxrwxrwx 1 owner:group  
+    The following set of three characters (rwx) is for the owner permissions.
+    The second set of three characters (rwx) is for the Group permissions.
+    The third set of three characters (rwx) is for the All Users permissions.
+ 
+File Access Modes
+
+The permissions of a file are the first line of defense in the security of a Unix system. The basic building blocks of Unix permissions are the read, write, and execute permissions, which have been described below −
+
+Read
+Grants the capability to read, i.e., view the contents of the file.
+
+Write
+Grants the capability to modify, or remove the content of the file.
+
+Execute
+User with execute permissions can run a file as a program.
+ 
+chown command:
+chown command to change owner and group assignments,the sytax is:
+chown owner:group filename
+So to change the owner of the file to user and group to family you enter
+chown user:family file.
+
+chmod command:
+chmod command allows you to change the permissions on a file using either a symbolic or a numeric mode.
+Syntax:
+$chmode g=r filename
