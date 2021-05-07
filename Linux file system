@@ -1,0 +1,56 @@
+Linux file system :
+       Linux file system is generally a built-in layer of a Linux operating system used to handle the data management of the storage. 
+       It helps to arrange the file on the disk storage. 
+       It manages the file name, file size, creation date, and much more information about a file. 
+
+Some of the Directories:-
+             1.	/bin - this is the directory that command & runs application and programs.
+             2.	/dev - Device files are stored in this directory.
+             3.	/etc - in this directory the system configuration is present.
+             4.	/boot - it contains the boot files that are required to start device.
+             5.	/home - this directory contains user's personal directories.
+             6.	/mnt – this directory maunally mount storage.
+             7.	/lib - this directory contains shared library files.
+             8.	/media - it is the directory where the external storage will be mounted when plugged in.
+             9.	/root - known as the home directory of the administrator.
+            10.	/temp - directory used when system boots and you need to use temp space.
+            11.	/proc - this directory stores the information of CPU & Kernel process.
+            12.	/usr - this contains unique system resources. 
+            13.	/var - this directory used to store data that changes frequently.
+
+                 
+Some commands are as follws:
+             1. pwd - To find out the path of the current working directory.
+                           Ex. /home/username.
+             2. cd  - Change the current working directory.
+                           Ex. /home/username/Documents.
+             3. ls  - Used to view the content of directory.
+                           Ex. ls/home/username/Documents.
+             4. cat - Used to list the content of file.
+          
+             5. cp  - Copy the file from current directory.
+                           Ex. cp file.txt
+             6. mv  - Used to move or rename the file.
+                           Ex. mv file.txt/home/username/Documents.
+             7. mkdir - Used to make a new directory.
+                           Ex. mkdir/Newfile
+             8. rmdir - Used to delete empty directory.
+                           Ex. rmdir newdir
+             9. rm    - Used to delete directory.
+                           Ex.rm file.txt 
+            10. touch - Create a new blank file.
+                           Ex. touch newfile.txt
+
+Hard Link :
+A hard link acts as a copy (mirrored) of the selected file. It accesses the data available in the original file.
+If the earlier selected file is deleted, the hard link to the file will still contain the data of that file.
+Files that are hard linkedtake the same inode number.
+Hard links are notallowed for directories.(Only a superuser* can do it)
+Hard links are comparitively faster than soft link.
+
+Soft Link:-
+A soft link (also known as Symbolic link) acts as a pointer or a reference to the file name. It does not access the data available in the original file. If the earlier file is deleted, the soft link will be pointing to a file that does not exist anymore.
+Files that are soft linkedtake a different inode number.
+Soft links can be used forlinking directories.
+It can be usedacross file systems.
+Soft links are comparatively slower.
