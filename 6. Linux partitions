@@ -9,7 +9,18 @@ Two types of partitions :
 		1) Primary Partition : this partition contains the booting files.
 		2) Extended Partition : this partition contains the storage files for other data to store.
 
-
+             MBR:
+             MBR is the traditional partitioning system, which has been in use for over 30 years.
+             Because of its age, it has some serious limitations. 
+             Because of this, the fourth partition is typically set up as an “extended partition”, in which “logical partitions” can be created. 
+             This allows you to subdivide the last partition to effectively allow additional partitions.
+ 
+             GPT:
+             GPT is a more modern partitioning scheme that attempts to resolve some of the issues inherent with MBR.
+             Systems running GPT can have many more partitions per disk. This is usually only limited by the restrictions imposed by the operating system itself.  
+             GPT can also write a “protective MBR” which tells MBR-only tools that the disk is being used.
+             In most cases, GPT is the better choice unless your operating system or tooling prevent you from using it.
+ 
  Steps to create a partition:
              1. list partitions.
              2. label a partition.
