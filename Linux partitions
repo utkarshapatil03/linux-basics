@@ -20,10 +20,8 @@ Two types of partitions :
              7. Add entry in fstab.
              8. Systemctl daemon-reload.
              9. Mount the partition on the directory.
-            10. Reboot.
-
+          
 Commands used in this are as follows:
-             
              1)list block with UUID Lsblk - fs /dev/vdb
              2)list partitions - parted -l
              3)make label to a partition - parted /dev/vdb mklabel msdos
